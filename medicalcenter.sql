@@ -10,7 +10,7 @@
  public | visits    | table | postgres
 (5 rows)
 
-INSERT INTO doctors(doctor_name,speciality) VALUES ('Jack','Dermatology'),('Kelly','Internal'),('Ayse','Radiology'),('Betul','Pediatric');
+INSERT INTO doctors(doctor_name,speciality) VALUES ('Jack','Dermatology'),('Kelly','Internal'),('Ayse','Radiology'),('Betul','Pediatric'),('Jiratchaya','Eye');
 
 medicalcenter_db=# select *from doctors;
  id | doctor_name | speciality  
@@ -19,7 +19,8 @@ medicalcenter_db=# select *from doctors;
   2 | Kelly       | Internal
   3 | Ayse        | Radiology
   4 | Betul       | Pediatric
-(4 rows)
+  5 | Jiratchaya  | Eye
+(5 rows)
 
 medicalcenter_db=# INSERT INTO diseases (disease_name) VALUES ('chickenpox'),('Covid19'),('CommonCold'),('eczema'),('acne');
 INSERT 0 5
